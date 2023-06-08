@@ -1,0 +1,103 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+*{
+  padding: 0%;
+  margin:0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.image .prof-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+.prof-card{
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0,  0.2);
+  border-radius: 24px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.prof-card::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  border-radius: 24px 24px 0 0;
+  width: 100%;
+  height: 37%;
+  background-color: #4070f4;
+}
+.prof-card .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+.text-data .name{
+  font-size: 22px;
+  font-weight: 500;
+}
+.text-data .jop{
+  font-size: 15px;
+  font-weight: 400;
+}
+.prof-card .media-button{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.media-button .links{
+  text-decoration: none;
+  background-color: #4070f4;
+  margin: 0 8px;
+  color: #fff;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.prof-card .Buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.Buttons .button{
+  margin: 0 10px;
+  padding: 8px 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #4070f4;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.button:hover{
+  background-color: #0e4bf1;
+}
